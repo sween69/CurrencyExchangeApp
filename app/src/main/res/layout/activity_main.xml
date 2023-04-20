@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_16dp">
+
+    <Spinner
+        android:id="@+id/baseCurrencySpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/base_currency"
+        android:inputType="text"
+        android:minHeight="@dimen/min_width_height_48dp"
+        app:layout_constraintEnd_toEndOf="@+id/clearButtonImageView"
+        app:layout_constraintStart_toStartOf="@+id/fromBaseCurrencyTextView"
+        app:layout_constraintTop_toBottomOf="@+id/fromBaseCurrencyTextView" />
+
+    <Spinner
+        android:id="@+id/targetCurrencySpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:contentDescription="@string/target_currency"
+        android:inputType="text"
+        android:minHeight="@dimen/min_width_height_48dp"
+        app:layout_constraintEnd_toEndOf="@+id/baseCurrencySpinner"
+        app:layout_constraintStart_toStartOf="@+id/baseCurrencySpinner"
+        app:layout_constraintTop_toBottomOf="@+id/toTargetCurrencyTextView" />
+
+    <Button
+        android:id="@+id/checkRateButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_32dp"
+        android:text="@string/check_rate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/targetCurrencySpinner"
+        app:layout_constraintWidth_max="@dimen/max_constraintWidth_320dp" />
+
+    <TextView
+        android:id="@+id/totalAmountTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:scrollbars="vertical"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/baseCurrencySpinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/baseCurrencySpinner"
+        app:layout_constraintTop_toBottomOf="@+id/baseRateTextView"
+        app:layout_constraintVertical_bias="1.0"
+        tools:hint="Total Amount" />
+
+    <TextView
+        android:id="@+id/fromBaseCurrencyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/from"
+        app:layout_constraintStart_toStartOf="@+id/amountEditText"
+        app:layout_constraintTop_toBottomOf="@+id/amountEditText" />
+
+    <TextView
+        android:id="@+id/toTargetCurrencyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/to"
+        app:layout_constraintStart_toStartOf="@+id/fromBaseCurrencyTextView"
+        app:layout_constraintTop_toBottomOf="@+id/baseCurrencySpinner" />
+
+    <EditText
+        android:id="@+id/amountEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:autofillHints="number"
+        android:hint="@string/enter_amount"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:minHeight="@dimen/min_width_height_48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/clearButtonImageView"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="@dimen/max_constraintWidth_488dp" />
+
+   <!-- <TextView
+        android:id="@+id/amountTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/enter_amount"
+        app:layout_constraintStart_toStartOf="@+id/amountEditText"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <TextView
+        android:id="@+id/baseRateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_32dp"
+        app:layout_constraintStart_toStartOf="@+id/targetCurrencySpinner"
+        app:layout_constraintTop_toBottomOf="@+id/checkRateButton"
+        tools:hint="BaseRate" />
+
+    <ImageView
+        android:id="@+id/clearButtonImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:clickable="true"
+        android:contentDescription="@string/clear_input"
+        android:focusable="true"
+        android:minWidth="@dimen/min_width_height_48dp"
+        android:minHeight="@dimen/min_width_height_48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/amountEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/amountEditText"
+        app:layout_constraintTop_toTopOf="@+id/amountEditText"
+        app:srcCompat="@android:drawable/ic_input_delete"
+        app:tint="@color/colorPrimary" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

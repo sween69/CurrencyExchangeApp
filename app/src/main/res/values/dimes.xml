@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_16dp">16dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="min_width_height_48dp">48dp</dimen>
+    <dimen name="max_constraintWidth_320dp">320dp</dimen>
+    <dimen name="max_constraintWidth_488dp">488dp</dimen>
+</resources>

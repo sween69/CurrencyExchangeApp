@@ -1,0 +1,14 @@
+<resources>
+    <color name="colorPrimary">#8c37a6</color>
+    <color name="colorPrimaryVariant">#8c37a6</color>
+    <color name="colorSecondary">#fc5c7d</color>
+    <color name="colorOnPrimary">#ffffff</color>
+    <color name="colorOnSecondary">#ffffff</color>
+    <color name="colorBackground">#ffffff</color>
+    <color name="colorSurface">#f5f5f5</color>
+    <color name="colorOnSurface">#000000</color>
+    <color name="colorError">#b00020</color>
+    <color name="colorOnError">#ffffff</color>
+    <color name="colorSpinnerBackground">#f5f5f5</color>
+    <color name="colorSpinnerDropDownList">#000000</color>
+</resources>

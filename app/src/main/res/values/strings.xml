@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CurrencyExchangeApp</string>
+    <string name="check_rate">Check Rate</string>
+    <string name="target_currency">Target Currency</string>
+    <string name="base_currency">Base Currency</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="_1">1</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="clear_input">Clear Input</string>
+</resources>
